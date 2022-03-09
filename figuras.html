@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Shizuru&display=swap" rel="stylesheet">
+  <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        background-image: url(https://concepto.de/wp-content/uploads/2018/09/figuras-geometricas-e1537799342318-800x400.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: local;
+    }
+    .title{
+        background-color: rgb(245, 192, 17);
+        box-sizing: content-box;
+        color: azure;
+        font-size: 300%;
+        margin-bottom: 20px;
+        border-radius: 33px;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 25px;
+        display: grid;
+        place-items: center;
+        padding-top: 50px;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+        
+    }
+    .imagenTitle{
+        width: 150px;
+        height: 100px;
+        justify-self: center;
+        display: flex;        
+    }
+    .title p{
+        color: rgb(0, 0, 0);
+        font-size: 70%;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-top: 0px;
+        -webkit-text-stroke: 0px rgb(158, 151, 151);
+        justify-self: center;                        
+    }
+    .principal{
+      display: flex;
+      grid-template-columns: auto 3fr;
+      justify-self: auto;    
+    }
+
+    .seccion {
+        background-color: rgb(245, 17, 245);
+        width: 50%;
+        height: 35vh;
+        display: grid;
+        grid-template-columns: auto 2fr;
+        place-items: center;
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-right: 30px;
+        border-radius: 33px;
+        justify-self: center;
+    }
+    .seccion h2 {
+        margin-left: 30px;
+        width: 100%;
+        color: transparent;
+        font-size: 30px;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: top;
+        grid-template-columns: auto 1fr;      
+    }
+    .seccion img {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 60px; 
+    } 
+    .seccion2 {
+        background-color: rgb(17, 161, 245);
+        width: 50%;
+        height: 35vh;
+        display: grid;
+        grid-template-columns: auto 2fr;
+        place-items: center;
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-right: 30px;
+        border-radius: 33px;
+    }
+    .seccion2 h2 {
+        margin-left: 30px;
+        width: 100%;
+        color: transparent;
+        font-size: 30px;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: top;
+        grid-template-columns: auto 1fr;     
+    }
+    .seccion2 img {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 60px;
+        justify-self: top; 
+    }
+    .seccion3 {
+        background-color: rgb(245, 63, 17);
+        width: 50%;
+        height: 35vh;
+        display: grid;
+        grid-template-columns: auto 2fr;
+        place-items: center;
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-right: 30px;
+        border-radius: 33px;
+    }
+    .seccion3 h2 {
+        margin-left: 30px;
+        width: 100%;
+        color: transparent;
+        font-size: 30px;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        margin-top: 0px;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: top;
+        grid-template-columns: auto 1fr;     
+    }
+    .seccion3 img {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 60px; 
+    } 
+    .formato{
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 0;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 30px;
+        place-items: center;        
+    }
+    .titleSeccion {
+        margin-left: 0px;
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        place-items: center;
+    }
+    .espaciador{
+        width: 85%;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+        border-radius: 8px;
+    }
+
+    .buttons{
+        place-items: initial;
+        margin-bottom: 10px;
+        margin-right: 30px;                       
+    }
+    .btnPerimetro{
+        background-color: rgb(0, 255, 13);
+        color: rgb(0, 0, 0);
+        width: 300px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .btnArea{
+        background-color: rgb(0, 255, 13);
+        color: rgb(0, 0, 0);
+        width: 300px;
+        height: 25px;
+        font-size: 20px;
+        border-radius: 8px;      
+    }    
+</style>
+<body>
+  <header class="title">
+    <img class="imagenTitle" src="http://imagens.mdig.com.br/ilusoes/ilusoes_gifs_animadas_23.gif" alt="img">  
+    <h1>
+      FIGURAS GEOMETRICAS      
+    </h1>
+    <p>Este es el primer taller del curso práctico de JavaScript</p>
+  </header>
+  <section class="principal">
+    <div  class="seccion">
+       <h2>Calcula el área y perímetro de un cuadrado<img class="imagenCuadrado" src="https://i.pinimg.com/originals/b7/a0/a8/b7a0a8bb644530e11706ecced2ff3bd8.gif" alt="cuadrado"></h2>
+        <form class="formato">
+          <label class="titleSeccion" for="InputCuadrado">
+              Escribe cuánto mide cada lado de tu cuadrado:
+          </label>
+          <input class="espaciador" id="InputCuadrado" type="number" />
+          <div class="buttons">                
+          <button class="btnPerimetro" type="button" onclick="calcularPerimetroCuadrado()"><strong>Calcular el 
+              perímetro</strong>       
+          </button>
+          <button class="btnArea" type="button" onclick="calcularAreaCuadrado()"><strong>Calcular el 
+              área</strong>       
+          </button>
+          </div>
+        </form>
+      </div>          
+    <div class="seccion2">    
+      <h2>Calcula el área y perímetro de un Triangulo<img class="imagenCuadrado" src="https://i.pinimg.com/originals/e3/2d/b7/e32db7bb42f7553367d8f641f74bcdd1.gif" alt="triangulo"></h2>
+        <form class="formato">
+          <label class="titleSeccion" for="InputTriangulo">
+              Escribe cuánto mide cada lado de tu triangulo:
+          </label>
+          <input class="espaciador" id="InputTrianguloL1" type="number" placeholder="Lado A" />          
+          <input class="espaciador" id="InputTrianguloL2" type="number" placeholder="Lado B" />
+          <input class="espaciador" id="InputTrianguloL3" type="number" placeholder="Base" />
+          <input class="espaciador" id="InputTrianguloL3" type="number" placeholder="Altura" />
+                    <div class="buttons">                
+          <button class="btnPerimetro" type="button" onclick="calcularPerimetroTriangulo()"><strong>Calcular el 
+              perímetro</strong>       
+          </button>
+          <button class="btnArea" type="button" onclick="calcularAreaTriangulo()"><strong>Calcular el 
+              área</strong>       
+          </button>
+          </div>
+        </form>
+    </div>
+    <div  class="seccion3">
+      <h2>Calcula el área y perímetro de un Circulo<img class="imagenCuadrado" src="https://i.pinimg.com/originals/99/8c/a5/998ca50ad73ed24e0200d9507cdb32e6.gif" alt="circulo"></h2>
+       <form class="formato">
+         <label class="titleSeccion" for="InputCuadrado">
+             Escribe cuánto mide cada lado de tu Circulo:
+         </label>
+         <input class="espaciador" id="InputCuadrado" type="number" />
+         <div class="buttons">                
+         <button class="btnPerimetro" type="button" onclick="calcularPerimetroCuadrado()"><strong>Calcular el 
+             perímetro</strong>       
+         </button>
+         <button class="btnArea" type="button" onclick="calcularAreaCuadrado()"><strong>Calcular el 
+             área</strong>       
+         </button>
+         </div>
+       </form>
+     </div>  
+  </section>
+  <script src="./figuras.js"></script>
+</body>
+</html>

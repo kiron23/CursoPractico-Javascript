@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<style>
+    .cuerpo {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        list-style: circle;
+        font-family: 'Dosis', sans-serif;
+        background-image: url(https://www.crushpixel.com/big-static19/preview4/sale-poster-with-percent-discount-3411860.jpg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        margin-bottom: 0%;          
+    };
+    .title{
+        font-size: large;
+        display: grid;
+        font-display: 100px;
+        grid-template-rows: auto 3fr auto;
+        background-color: azure;
+    }
+    .title img{
+        width: 700pv;
+        height: 100px;
+        justify-items: center;
+        margin-bottom: -5%;
+    }
+    .title h1{
+        justify-items: center;
+        width: 100%;
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .title p {
+        font-size: medium;
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: bold; 
+    }
+    .seccion {
+        width: 35%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        justify-items: center;
+        background-color: rgb(3, 3, 3);
+        border-radius: 30px;
+        margin-bottom: 30px;        
+    }
+    .seccion h2 {
+        text-align: center;
+        width: 90%;
+        margin-bottom: 10%;
+        color: white;
+    }
+    .formato {
+        width: 70%;
+        justify-self: center;
+        color: white;
+    }
+    .formato p {
+        width: 100%;
+        text-align: center;
+        color: rgb(252, 5, 5);
+    }
+    .inputPrice {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .inputCupon  {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .lista {
+        justify-self: center;
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 20px;    
+    }    
+    .formato li{
+        background-color: rgb(255, 208, 0);
+        border-style: groove;
+        display: flex;
+        justify-content: center;
+        color: black;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    .button {
+        background-color: rgba(255, 148, 9, 0.952);
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 8px;
+        border-style: groove;
+        font-weight: bold; 
+        margin-bottom: 20px;       
+    }
+</style>
+<body>
+<div class="cuerpo">    
+   <header class="title">
+    <h1>
+        Porcentajes y Descuentos
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrz0oenOHYpbNxM2blQJ1cA9-j14LT9QfrA&usqp=CAU" alt="imagen" class="imagen">
+    </h1>
+    <p>
+        Este es el segundo taller del Curso Practico de JAVASCRIPT.
+    </p>
+    </header> 
+        <section class="seccion">
+        <h2>
+            Calcula el precio a pagar por tus productos aplicando un Cupon de Descuento.
+        </h2>
+        <form class="formato">
+                <label for="InputPrice">Escribe el precio de tu producto: </label>
+                <input id="InputPrice" type="number" class="inputPrice" placeholder="Ejem. $120.000"><br>
+
+                <label for="InputCupon">Escribe nombre de tu Cupon:</label> 
+                <input id="InputCupon" type="text" class="inputCupon" placeholder="Ejem. Cupon1">
+                <strong><p id="ResultP"></p>
+                <p id="ResultP1"></p></strong>
+                <ul class="lista">Nombre de los Cupones</ul> 
+                    <li>
+                        Cupon1 = 15% Descuento
+                    </li>
+                    <li>
+                        Cupon2 = 30% Descuento
+                    </li>
+                    <li>
+                        Cupon3 = 40% Descuento
+                    </li>
+                    
+                <button class="button" type="button" onclick="buttonPriceDiscount()">
+                   <strong>Calcular valor del Cupon</strong>
+                </button>                
+            
+        </form>
+        </section>
+        <script src="./descuentos.js"></script>
+</div>        
+</body>
+</html>
